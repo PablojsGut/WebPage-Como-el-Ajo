@@ -1,0 +1,1 @@
+Página Web para la empresa "Como el Ajo" el cual será solo una carta de presentación de la empresa mostrando los canales de contacto que tiene, los servicios y productos que ofrecen. Esta desarrollada en HTML, CSS y PHP y servirá como base para la WebApp.
