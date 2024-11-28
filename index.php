@@ -7,47 +7,13 @@
     <link rel="icon" type="image/png" href="img/logos/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/main.css">
+
 </head>
 <body>
-    <header class="header">
-        <?php
-             include 'elements/menu_bar.php';
-             include 'elements/carrusel.php';
-             include 'elements/btn_contact.php';
-        ?>
-    </header>
-
-    <main>
-        <hr class="featurette-divider">
-        <?php
-            include 'elements/about.php';
-        ?>
-        <hr class="featurette-divider">
-        <?php
-            include 'elements/products.php';
-        ?>
-        <hr class="featurette-divider">
-        <?php
-            include 'elements/services.php';
-        ?>
-        <hr class="featurette-divider">
-        <?php
-            include 'elements/contacts.php';
-        ?>
-    </main>
-
-
-    <footer class="container">
-        <!-- <p>© 2024-2029 Como el Ajo. · Página hecha por <a href="#">[MOL]</a></p> -->
-        <?php
-            include 'elements/footer.php';
-        ?>
-        <!-- Firma del desarrollador -->
-        <div class="text-center mt-4">
-            <p class="text-muted" style="font-size: 0.875rem;">Página desarrollada por PablojsGut</p>
-        </div>
-    </footer>
-
+    <?php
+            include 'structure.php';
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

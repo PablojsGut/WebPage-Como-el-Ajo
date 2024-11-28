@@ -1,0 +1,209 @@
+{
+    "navItems": [
+      {
+        "label": "Home",
+        "link": "#",
+        "active": true
+      },
+      {
+        "label": "Conócenos",
+        "link": "#about"
+      },
+      {
+        "label": "Productos",
+        "link": "#products"
+      },
+      {
+        "label": "Servicios",
+        "link": "#services"
+      },
+      {
+        "label": "Contáctanos",
+        "link": "#contacts"
+      }
+    ],
+    "slides": [
+      {
+        "imageSrc": "img/Como el Ajo/bg_1.jpg",
+        "imageAlt": "Descripción de la imagen 1",
+        "title": "¡Somos \"Como el Ajo\"!",
+        "description": "Te entregamos un servicio de diseño, armado y mejoramiento de huertos urbanos con riego tecnificado.",
+        "buttonText": "Sign up today",
+        "buttonLink": "#",
+        "captionAlign": "text-start"
+      },
+      {
+        "imageSrc": "img/Como el Ajo/example_2.jpg",
+        "imageAlt": "Descripción de la imagen 2",
+        "title": "Hacemos almácigos a tu pinta",
+        "description": "Con nuestras macetas modulares podrás armar tu huerto a tu medida.",
+        "buttonText": "Learn more",
+        "buttonLink": "#",
+        "captionAlign": ""
+      },
+      {
+        "imageSrc": "img/Como el Ajo/example_3.jpg",
+        "imageAlt": "Descripción de la imagen 3",
+        "title": "Estai \"Como el Ajo\" con tu cultivo",
+        "description": "Contamos con talleres y asesoramiento para que aprendas a cuidar tus cultivos.",
+        "buttonText": "Browse gallery",
+        "buttonLink": "#",
+        "captionAlign": "text-end"
+      }
+    ],
+    "socialLinks": [
+      {
+        "platform": "whatsapp",
+        "link": "https://wa.me/56995928447",
+        "icon": "bi-whatsapp",
+        "color": "#25D366",
+        "bottom": "20px"
+      },
+      {
+        "platform": "instagram",
+        "link": "https://www.instagram.com/comoelajo/",
+        "icon": "bi-instagram",
+        "color": "#E4405F",
+        "bottom": "90px"
+      },
+      {
+        "platform": "linkedin",
+        "link": "https://www.linkedin.com/company/comoelajo/",
+        "icon": "bi-linkedin",
+        "color": "#0077B5",
+        "bottom": "160px"
+      }
+    ],
+    "products": [
+      {
+        "name": "Macetas Modulares",
+        "description": "Nos entregas las medidas y te armamos tus macetas.",
+        "image": "img/products/maceta_modular.jpg",
+        "alt": "Macetas Modulares"
+      },
+      {
+        "name": "Semillas de Lechuga",
+        "description": "Macetas personalizadas con Eco-Madera, según tus necesidades.",
+        "image": "img/products/semilla_lechuga.jpg",
+        "alt": "Semillas de Lechuga"
+      },
+      {
+        "name": "Semillas de Ajo",
+        "description": "Diseñamos macetas para el espacio que dispongas y tus preferencias.",
+        "image": "img/products/semilla_ajo.jpg",
+        "alt": "Semillas de Ajo"
+      },
+      {
+        "name": "Semillas de Zanahoria",
+        "description": "Dinos tus medidas, y creamos la maceta ideal para ti.",
+        "image": "img/products/semilla_zanahoria.jpg",
+        "alt": "Semillas de Zanahoria"
+      },
+      {
+        "name": "Semillas de Tomate",
+        "description": "Ideal para tu huerto urbano, con instrucciones de siembra.",
+        "image": "img/products/semilla_tomate.jpg",
+        "alt": "Semillas de Tomate"
+      },
+      {
+        "name": "Kit de Huerto Urbano",
+        "description": "Todo lo que necesitas para iniciar tu huerto urbano en casa.",
+        "image": "img/products/kit_huerto.jpg",
+        "alt": "Kit de Huerto Urbano"
+      }
+    ],
+    "services": [
+      {
+        "icon": "bi bi-brush-fill",
+        "title": "Diseño de Huertos Urbanos",
+        "description": "Transformamos cualquier espacio en tu huerto urbano ideal. Te ayudamos a maximizar el espacio disponible y crear un ambiente óptimo para cultivar tus propias verduras, hierbas y flores."
+      },
+      {
+        "icon": "bi bi-person-raised-hand",
+        "title": "Asesoría en Cultivo",
+        "description": "Ofrecemos una asesoría personalizada para cada etapa de tu huerto, desde la preparación del suelo hasta la cosecha. Te guiamos paso a paso para asegurarnos de que tengas el mejor resultado."
+      },
+      {
+        "icon": "bi bi-droplet-half",
+        "title": "Instalación de Sistemas de Riego",
+        "description": "Instalamos sistemas de riego automáticos que ahorran tiempo y agua. Nos aseguramos de que tu huerto reciba el riego adecuado para un crecimiento óptimo y sin complicaciones."
+      },
+      {
+        "icon": "bi bi-journal-bookmark-fill",
+        "title": "Talleres y Formación",
+        "description": "Ofrecemos talleres interactivos sobre el cuidado de plantas, cómo hacer compost y mucho más. Aprenderás todo lo necesario para mantener tu huerto saludable y productivo."
+      },
+      {
+        "icon": "bi bi-tools",
+        "title": "Mantenimiento de Huertos",
+        "description": "Ofrecemos un servicio completo de mantenimiento, que incluye la poda, control de plagas y ajustes en el sistema de riego, para asegurar que tu huerto se mantenga saludable durante todo el año."
+      }
+    ],
+    "contacts": [
+      {
+        "icon": "bi-whatsapp",
+        "color": "#25D366",
+        "title": "WhatsApp",
+        "description": "Contáctanos directamente en WhatsApp para atención rápida y personalizada.",
+        "link": "https://wa.me/56995928447",
+        "btn_class": "btn-success",
+        "btn_text": "Abrir en WhatsApp"
+      },
+      {
+        "icon": "bi-instagram",
+        "color": "#E4405F",
+        "title": "Instagram",
+        "description": "Síguenos en Instagram para ver las últimas novedades y proyectos.",
+        "link": "https://www.instagram.com/comoelajo/",
+        "btn_class": "btn-danger",
+        "btn_text": "Visitar Instagram"
+      },
+      {
+        "icon": "bi-linkedin",
+        "color": "#0077B5",
+        "title": "LinkedIn",
+        "description": "Conecta con nosotros en LinkedIn para ver nuestras publicaciones profesionales.",
+        "link": "https://www.linkedin.com/company/comoelajo/",
+        "btn_class": "btn-primary",
+        "btn_text": "Visitar LinkedIn"
+      }
+    ],
+    "aboutSections": [
+      {
+        "heading": "¿Quiénes Somos?",
+        "content": "En Como el Ajo, nos dedicamos a crear, mejorar y personalizar huertos urbanos con sistemas de riego tecnificado, eliminando las barreras y el temor inicial que muchos sienten al iniciar un huerto en casa. Nuestro propósito es ofrecer comodidad y confianza para que cada persona pueda disfrutar de los beneficios del autoconsumo y la agricultura en su propio hogar.",
+        "imageAlt": "Descripción de la imagen",
+        "imageSrc": "placeholder.svg",
+        "order": "normal"
+      },
+      {
+        "heading": "Nuestro Compromiso",
+        "content": "Originalmente centrados en el cliente individual, ahora también llevamos la agricultura urbana al entorno laboral. Ayudamos a empresas a integrar huertos en sus oficinas para fomentar pausas activas y actividades de equipo, creando espacios verdes que promueven un ambiente más saludable y productivo. Además, expandimos nuestros servicios a hoteles, restaurantes y bares que buscan una experiencia gastronómica sostenible y de alta calidad para sus clientes.",
+        "imageAlt": "Descripción de la imagen",
+        "imageSrc": "placeholder.svg",
+        "order": "reverse"
+      },
+      {
+        "heading": "Nuestra Visión",
+        "content": "Ser líderes en el diseño y creación de huertos urbanos tanto para personas como para empresas, promoviendo un estilo de vida sostenible y saludable a través de soluciones personalizadas.",
+        "imageAlt": "Descripción de la imagen",
+        "imageSrc": "placeholder.svg",
+        "order": "normal"
+      },
+      {
+        "heading": "Nuestra Misión",
+        "content": "Derribar las barreras que impiden a personas y empresas crear y mantener huertos urbanos, incentivando el consumo de alimentos frescos y saludables, y creando experiencias únicas y productivas.",
+        "imageAlt": "Descripción de la imagen",
+        "imageSrc": "placeholder.svg",
+        "order": "reverse"
+      },
+      {
+        "heading": "Nuestra Historia",
+        "content": "Nacimos con el propósito de facilitar el acceso a la agricultura urbana, ofreciendo soluciones innovadoras y seguras para quienes desean cultivar en casa o en el trabajo. Con los años, hemos expandido nuestro alcance para incluir proyectos empresariales, siempre enfocados en sostenibilidad y calidad.",
+        "imageAlt": "Descripción de la imagen",
+        "imageSrc": "placeholder.svg",
+        "order": "normal"
+      }
+    ]
+  }
+  
