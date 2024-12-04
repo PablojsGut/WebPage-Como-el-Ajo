@@ -77,7 +77,11 @@ function renderCarousel($carouselId, $slides) {
 // Función para renderizar los botones flotantes
 function renderSocialButtons($socialLinks) {
   foreach ($socialLinks as $social) {
-      echo "<a href='{$social['link']}' class='social-btn {$social['platform']}-btn' target='_blank' rel='noopener noreferrer' style='bottom: {$social['bottom']}; background-color: {$social['color']}'>
+      echo "<a href='{$social['link']}' 
+              class='social-btn {$social['platform']}-btn' 
+              target='_blank' 
+              rel='noopener noreferrer' 
+              style='bottom: {$social['bottom']}; background-color: {$social['color']}'>
               <i class='bi {$social['icon']}'></i>
             </a>";
   }
@@ -135,8 +139,7 @@ function renderAboutSections($sections) {
   }
 
   function renderService($services) {
-    echo '<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"> 
-          <link rel="stylesheet" href="style/main.css">'; // Comienza la fila
+    echo '<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">'; // Comienza la fila
 
 
     // Usamos un ciclo 'for' para iterar sobre el arreglo de servicios
@@ -159,7 +162,7 @@ function renderAboutSections($sections) {
   function renderContact($contacts) {
     echo '<div id="contacts" class="container py-5">';
     echo '<h2 class="text-center fw-bold display-4 mb-5">Hablanos y Síguenos</h2>';
-    echo '<div class="row row-cols-1 row-cols-md-3 g-4">';
+    echo '<div class="row row-cols-1 row-cols-md-4 g-4">'; // Cambia row-cols-md-3 a row-cols-md-4
 
     // Iteramos sobre el arreglo de contactos
     foreach ($contacts as $contact) {
@@ -179,7 +182,7 @@ function renderAboutSections($sections) {
 
     echo '</div>';
     echo '</div>';
-  }
+}
 
   function renderFooter($socialLinks) {
     echo '<div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

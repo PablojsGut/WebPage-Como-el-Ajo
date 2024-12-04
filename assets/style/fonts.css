@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Wilden';
+    src: url('../fonts/Wilden-Font/Wilden.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h5, .btn, .nav-link {
+    font-family: 'Wilden', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}

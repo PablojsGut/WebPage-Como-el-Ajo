@@ -1,0 +1,13 @@
+version: '2.29.7'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: WebPage_Como-el-Ajo
+    ports:
+      - "8080:80" # Mapea el puerto 80 del contenedor al 8080 en tu máquina local
+    volumes:
+      - ./src:/var/www/html # Sincroniza tu código local con el contenedor
+    restart: always

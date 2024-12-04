@@ -16,7 +16,7 @@
 
 <header class="header">
     <?php
-        renderNavbar('img/logos/logo.jpg', $navItems);
+        renderNavbar('assets/img/logos/logo.jpg', $navItems);
         renderCarousel('myCarousel', $slides);
         renderSocialButtons($socialLinks);
     ?>
@@ -24,14 +24,16 @@
 
 <main>
     <hr class="featurette-divider">
-        <div id="about" class="container marketing">
-            <h2 class="featurette-heading text-center fw-bold display-4 mb-5">Como el Ajo</h2>
-<?php
-    // Llamar a la función para renderizar las secciones
-    renderAboutSections($aboutSections);
-?>
 
-        </div>
+    <div id="services" class="container px-4 py-5" id="icon-grid">
+    
+        <h2 class="featurette-heading text-center fw-bold display-4 mb-5">Nuestros Servicios</h2>
+
+        <?php
+        // Llama a la función renderService para generar los servicios
+        renderService($services);
+        ?>
+    </div>
     <hr class="featurette-divider">
     <div id="products" class="container">
   
@@ -43,14 +45,12 @@
         ?>
     </div>
     <hr class="featurette-divider">
-    <div id="services" class="container px-4 py-5" id="icon-grid">
-    
-        <h2 class="featurette-heading text-center fw-bold display-4 mb-5">Nuestros Servicios</h2>
+    <div id="about" class="container marketing">
+    <?php
+        // Llamar a la función para renderizar las secciones
+        renderAboutSections($aboutSections);
+    ?>
 
-        <?php
-        // Llama a la función renderService para generar los servicios
-        renderService($services);
-        ?>
     </div>
     <hr class="featurette-divider">
     <?php

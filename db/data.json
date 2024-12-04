@@ -6,16 +6,16 @@
         "active": true
       },
       {
-        "label": "Conócenos",
-        "link": "#about"
+        "label": "Servicios",
+        "link": "#services"
       },
       {
         "label": "Productos",
         "link": "#products"
       },
       {
-        "label": "Servicios",
-        "link": "#services"
+        "label": "Conócenos",
+        "link": "#about"
       },
       {
         "label": "Contáctanos",
@@ -24,7 +24,7 @@
     ],
     "slides": [
       {
-        "imageSrc": "img/Como el Ajo/bg_1.jpg",
+        "imageSrc": "assets/img/Como el Ajo/bg_1.jpg",
         "imageAlt": "Descripción de la imagen 1",
         "title": "¡Somos \"Como el Ajo\"!",
         "description": "Te entregamos un servicio de diseño, armado y mejoramiento de huertos urbanos con riego tecnificado.",
@@ -33,7 +33,7 @@
         "captionAlign": "text-start"
       },
       {
-        "imageSrc": "img/Como el Ajo/example_2.jpg",
+        "imageSrc": "assets/img/Como el Ajo/example_2.jpg",
         "imageAlt": "Descripción de la imagen 2",
         "title": "Hacemos almácigos a tu pinta",
         "description": "Con nuestras macetas modulares podrás armar tu huerto a tu medida.",
@@ -42,7 +42,7 @@
         "captionAlign": ""
       },
       {
-        "imageSrc": "img/Como el Ajo/example_3.jpg",
+        "imageSrc": "assets/img/Como el Ajo/example_3.jpg",
         "imageAlt": "Descripción de la imagen 3",
         "title": "Estai \"Como el Ajo\" con tu cultivo",
         "description": "Contamos con talleres y asesoramiento para que aprendas a cuidar tus cultivos.",
@@ -52,63 +52,70 @@
       }
     ],
     "socialLinks": [
-      {
-        "platform": "whatsapp",
-        "link": "https://wa.me/56995928447",
-        "icon": "bi-whatsapp",
-        "color": "#25D366",
-        "bottom": "20px"
-      },
-      {
-        "platform": "instagram",
-        "link": "https://www.instagram.com/comoelajo/",
-        "icon": "bi-instagram",
-        "color": "#E4405F",
-        "bottom": "90px"
-      },
-      {
-        "platform": "linkedin",
-        "link": "https://www.linkedin.com/company/comoelajo/",
-        "icon": "bi-linkedin",
-        "color": "#0077B5",
-        "bottom": "160px"
-      }
+        {
+            "platform": "whatsapp",
+            "link": "https://wa.me/56995928447",
+            "icon": "bi-whatsapp",
+            "color": "#25D366",
+            "bottom": "230px"
+        },
+        {
+            "platform": "instagram",
+            "link": "https://www.instagram.com/comoelajo/",
+            "icon": "bi-instagram",
+            "color": "#E4405F",
+            "bottom": "160px"
+        },
+        {
+            "platform": "gmail",
+            "link": "mailto:contacto@comoelajo.com",
+            "icon": "bi-envelope",
+            "color": "#D14836",
+            "bottom": "90px"
+        },
+        {
+            "platform": "linkedin",
+            "link": "https://www.linkedin.com/company/comoelajo/",
+            "icon": "bi-linkedin",
+            "color": "#0077B5",
+            "bottom": "20px"
+        }
     ],
     "products": [
       {
         "name": "Macetas Modulares",
         "description": "Nos entregas las medidas y te armamos tus macetas.",
-        "image": "img/products/maceta_modular.jpg",
+        "image": "assets/img/products/maceta_modular.jpg",
         "alt": "Macetas Modulares"
       },
       {
         "name": "Semillas de Lechuga",
         "description": "Macetas personalizadas con Eco-Madera, según tus necesidades.",
-        "image": "img/products/semilla_lechuga.jpg",
+        "image": "assets/img/products/semilla_lechuga.jpg",
         "alt": "Semillas de Lechuga"
       },
       {
         "name": "Semillas de Ajo",
         "description": "Diseñamos macetas para el espacio que dispongas y tus preferencias.",
-        "image": "img/products/semilla_ajo.jpg",
+        "image": "assets/img/products/semilla_ajo.jpg",
         "alt": "Semillas de Ajo"
       },
       {
         "name": "Semillas de Zanahoria",
         "description": "Dinos tus medidas, y creamos la maceta ideal para ti.",
-        "image": "img/products/semilla_zanahoria.jpg",
+        "image": "assets/img/products/semilla_zanahoria.jpg",
         "alt": "Semillas de Zanahoria"
       },
       {
         "name": "Semillas de Tomate",
         "description": "Ideal para tu huerto urbano, con instrucciones de siembra.",
-        "image": "img/products/semilla_tomate.jpg",
+        "image": "assets/img/products/semilla_tomate.jpg",
         "alt": "Semillas de Tomate"
       },
       {
         "name": "Kit de Huerto Urbano",
         "description": "Todo lo que necesitas para iniciar tu huerto urbano en casa.",
-        "image": "img/products/kit_huerto.jpg",
+        "image": "assets/img/products/kit_huerto.jpg",
         "alt": "Kit de Huerto Urbano"
       }
     ],
@@ -140,7 +147,7 @@
       }
     ],
     "contacts": [
-      {
+    {
         "icon": "bi-whatsapp",
         "color": "#25D366",
         "title": "WhatsApp",
@@ -148,8 +155,8 @@
         "link": "https://wa.me/56995928447",
         "btn_class": "btn-success",
         "btn_text": "Abrir en WhatsApp"
-      },
-      {
+    },
+    {
         "icon": "bi-instagram",
         "color": "#E4405F",
         "title": "Instagram",
@@ -157,8 +164,17 @@
         "link": "https://www.instagram.com/comoelajo/",
         "btn_class": "btn-danger",
         "btn_text": "Visitar Instagram"
-      },
-      {
+    },
+    {
+        "icon": "bi-envelope",
+        "color": "#D14836",
+        "title": "Correo Electrónico",
+        "description": "Envíanos un correo para consultas más detalladas o soporte personalizado.",
+        "link": "mailto:contacto@comoelajo.com",
+        "btn_class": "btn-warning",
+        "btn_text": "Enviar Correo"
+    },
+    {
         "icon": "bi-linkedin",
         "color": "#0077B5",
         "title": "LinkedIn",
@@ -166,8 +182,8 @@
         "link": "https://www.linkedin.com/company/comoelajo/",
         "btn_class": "btn-primary",
         "btn_text": "Visitar LinkedIn"
-      }
-    ],
+    }
+],
     "aboutSections": [
       {
         "heading": "¿Quiénes Somos?",
