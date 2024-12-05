@@ -28,14 +28,25 @@
     <div id="services" class="container px-4 py-5" id="icon-grid">
     
         <h2 class="featurette-heading text-center fw-bold display-4 mb-5">Nuestros Servicios</h2>
-
+        <p>
+        Nos abrimos al enfoque B2B del sector empresarial que incluye la integración de huertos urbanos en el entorno laboral, enriqueciendo los espacios, ofreciendo pausas activas y actividades de trabajo en equipo que promueven un ambiente laboral más saludable y productivo. Además, buscamos expandir nuestro servicio a hoteles, restaurantes y bares, brindando una experiencia única a sus clientes y destacando su compromiso con la sustentabilidad y la calidad alimentaria.
+        </p>
         <?php
         // Llama a la función renderService para generar los servicios
         renderService($services);
         ?>
     </div>
     <hr class="featurette-divider">
-    <div id="products" class="container">
+    <div id="about" class="container px-4 py-5">
+        <h2 class="featurette-heading text-center fw-bold display-4 mb-5">Somos COMO EL AJO</h2>
+        <?php
+            // Llamar a la función para renderizar las secciones
+            renderAboutSections($aboutSections);
+        ?>
+
+    </div>
+    <hr class="featurette-divider">
+    <div id="products" class="container px-4 py-5">
   
         <h2 class="featurette-heading text-center fw-bold display-4 mb-5">Nuestros Productos</h2>
 
@@ -43,14 +54,6 @@
         // Llama a la función renderProduct para generar las tarjetas de productos
             renderProduct($products);
         ?>
-    </div>
-    <hr class="featurette-divider">
-    <div id="about" class="container marketing">
-    <?php
-        // Llamar a la función para renderizar las secciones
-        renderAboutSections($aboutSections);
-    ?>
-
     </div>
     <hr class="featurette-divider">
     <?php

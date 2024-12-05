@@ -17,3 +17,13 @@
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
   }
+
+  .btn-carousel {
+    background-color: #1e7e34; /* Verde para "Como el Ajo" */
+    border-color: #1e7e34;
+  }
+  
+  .btn-carousel:hover {
+    background-color: #155724; /* Verde más oscuro al hacer hover */
+    border-color: #155724;
+  } 

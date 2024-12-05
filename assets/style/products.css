@@ -1,0 +1,9 @@
+/* Efecto de hover: agrandar la tarjeta */
+.product-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Agrandar ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Agregar una sombra más fuerte */
+}

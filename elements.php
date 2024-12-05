@@ -55,7 +55,7 @@ function renderCarousel($carouselId, $slides) {
             <div class='carousel-caption {$slide['captionAlign']}'>
               <h1>{$slide['title']}</h1>
               <p>{$slide['description']}</p>
-              <p><a class='btn btn-lg btn-primary' href='{$slide['buttonLink']}'>{$slide['buttonText']}</a></p>
+              <p><a class='btn btn-lg btn-primary btn-carousel' href='{$slide['buttonLink']}'>{$slide['buttonText']}</a></p>
             </div>
           </div>
         </div>";
@@ -110,78 +110,110 @@ function renderAboutSections($sections) {
   }
 }
 
-  function renderProduct($products) {
-    echo '<div class="row">'; // Comienza el contenedor de la fila
+function renderProduct($products) {
+  echo '<div class="row">'; // Comienza el contenedor de la fila
 
-    // Usamos un ciclo 'for' para iterar sobre el arreglo de productos
-    for ($i = 0; $i < count($products); $i++) {
-        $product = $products[$i]; // Obtenemos el producto en la posición actual
+  for ($i = 0; $i < count($products); $i++) {
+      $product = $products[$i]; // Obtenemos el producto actual
 
-        echo '
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="row g-0">
-                    <div class="col-4">
-                        <img src="' . $product['image'] . '" class="img-fluid rounded-start" alt="' . $product['alt'] . '">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">' . $product['name'] . '</h5>
-                            <p class="card-text">' . $product['description'] . '</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>';
-    }
+      // Determinar el estado del producto
+      $badge = '';
+      if ($product['status'] === 'out-of-stock') {
+          $badge = '<span class="badge bg-danger text-light position-absolute top-0 end-0 m-2">Agotado</span>';
+      } elseif ($product['status'] === 'coming-soon') {
+          $badge = '<span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Próximamente</span>';
+      }
 
-    echo '</div>'; // Cierra la fila
+      echo '
+      <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm product-card">
+              <div class="position-relative">
+                  ' . $badge . '
+                  <div class="row g-0">
+                      <div class="col-4">
+                          <img src="' . $product['image'] . '" class="img-fluid rounded-start" alt="' . $product['alt'] . '">
+                      </div>
+                      <div class="col-8">
+                          <div class="card-body">
+                              <h5 class="card-title">' . $product['name'] . '</h5>
+                              <p class="card-text">' . $product['description'] . '</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>';
   }
 
-  function renderService($services) {
-    echo '<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">'; // Comienza la fila
+  echo '</div>'; // Cierra la fila
+}
 
 
-    // Usamos un ciclo 'for' para iterar sobre el arreglo de servicios
-    for ($i = 0; $i < count($services); $i++) {
-        $service = $services[$i]; // Obtenemos el servicio en la posición actual
+function renderService($services) {
+  $total = count($services);
+  $currentIndex = 0;
+  $rowPattern = [2, 3];
+  $patternIndex = 0;
 
-        echo '
-        <div class="col d-flex align-items-start">
-            <i class="' . $service['icon'] . ' icon-large"></i>
-            <div>
-                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">' . $service['title'] . '</h3>
-                <p>' . $service['description'] . '</p>
-            </div>
-        </div>';
-    }
+  echo '<div class="container py-5">';
+  echo '<div class="row g-4 justify-content-center">';
 
-    echo '</div>'; // Cierra la fila
+  while ($currentIndex < $total) {
+      $columns = $rowPattern[$patternIndex];
+      $patternIndex = ($patternIndex + 1) % count($rowPattern);
+
+      echo '<div class="row justify-content-center mb-4">';
+
+      for ($i = 0; $i < $columns; $i++) {
+          if ($currentIndex >= $total) break;
+
+          $service = $services[$currentIndex];
+
+          echo '
+          <div class="col-12 col-md-' . (12 / $columns) . ' d-flex align-items-stretch">
+              <div class="card service-card h-100 w-100 d-flex flex-column">
+                  <div class="card-body service-body d-flex flex-column justify-content-between">
+                      <div class="d-flex align-items-center">
+                          <i class="' . $service['icon'] . ' service-icon me-3"></i>
+                          <h3 class="fw-bold fs-5 text-body-emphasis mb-0">' . $service['title'] . '</h3>
+                      </div>
+                      <p class="service-description mt-3">' . $service['description'] . '</p>
+                  </div>
+              </div>
+          </div>';
+          $currentIndex++;
+      }
+
+      echo '</div>';
   }
 
-  function renderContact($contacts) {
-    echo '<div id="contacts" class="container py-5">';
-    echo '<h2 class="text-center fw-bold display-4 mb-5">Hablanos y Síguenos</h2>';
-    echo '<div class="row row-cols-1 row-cols-md-4 g-4">'; // Cambia row-cols-md-3 a row-cols-md-4
+  echo '</div>';
+  echo '</div>';
+}
 
-    // Iteramos sobre el arreglo de contactos
-    foreach ($contacts as $contact) {
-        echo '<div class="col">
-                <div class="card h-100 text-center">
-                    <div class="card-body">
-                        <i class="bi ' . $contact['icon'] . '" style="font-size: 4rem; color: ' . $contact['color'] . ';"></i>
-                        <h5 class="card-title fw-bold mt-3">' . $contact['title'] . '</h5>
-                        <p class="card-text">' . $contact['description'] . '</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="' . $contact['link'] . '" target="_blank" class="btn ' . $contact['btn_class'] . '">' . $contact['btn_text'] . '</a>
-                    </div>
-                </div>
-              </div>';
-    }
+function renderContact($contacts) {
+  echo '<div id="contacts" class="container py-5">';
+  echo '<h2 class="text-center fw-bold display-4 mb-5">Hablanos y Síguenos</h2>';
+  echo '<div class="row row-cols-1 row-cols-md-4 g-4">'; // Cambia row-cols-md-3 a row-cols-md-4
 
-    echo '</div>';
-    echo '</div>';
+  // Iteramos sobre el arreglo de contactos
+  foreach ($contacts as $contact) {
+      echo '<div class="col">
+              <div class="card h-100 text-center">
+                  <div class="card-body">
+                      <i class="bi ' . $contact['icon'] . '" style="font-size: 4rem; color: ' . $contact['color'] . ';"></i>
+                      <h5 class="card-title fw-bold mt-3">' . $contact['title'] . '</h5>
+                      <p class="card-text">' . $contact['description'] . '</p>
+                  </div>
+                  <div class="card-footer">
+                      <a href="' . $contact['link'] . '" target="_blank" class="btn ' . $contact['btn_class'] . '">' . $contact['btn_text'] . '</a>
+                  </div>
+              </div>
+            </div>';
+  }
+
+  echo '</div>';
+  echo '</div>';
 }
 
   function renderFooter($socialLinks) {
