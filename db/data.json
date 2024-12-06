@@ -10,12 +10,12 @@
         "link": "#services"
       },
       {
-        "label": "Productos",
-        "link": "#products"
-      },
-      {
         "label": "Conócenos",
         "link": "#about"
+      },
+      {
+        "label": "Productos",
+        "link": "#products"
       },
       {
         "label": "Contáctanos",
@@ -24,7 +24,7 @@
     ],
     "slides": [
       {
-        "imageSrc": "assets/img/Como el Ajo/bg_1.jpg",
+        "imageSrc": "assets/img/dibujos/b2b.jpeg",
         "imageAlt": "Descripción de la imagen 1",
         "title": "¡Somos \"Como el Ajo\"!",
         "description": "Te entregamos un servicio de diseño, armado y mejoramiento de huertos urbanos con riego tecnificado.",
@@ -33,7 +33,7 @@
         "captionAlign": "text-start"
       },
       {
-        "imageSrc": "assets/img/Como el Ajo/example_2.jpg",
+        "imageSrc": "assets/img/fotos/example_2.jpg",
         "imageAlt": "Descripción de la imagen 2",
         "title": "Hacemos almácigos a tu pinta",
         "description": "Con nuestras macetas modulares podrás armar tu huerto a tu medida.",
@@ -42,7 +42,7 @@
         "captionAlign": ""
       },
       {
-        "imageSrc": "assets/img/Como el Ajo/example_3.jpg",
+        "imageSrc": "assets/img/fotos/example_3.jpg",
         "imageAlt": "Descripción de la imagen 3",
         "title": "Estai \"Como el Ajo\" con tu cultivo",
         "description": "Contamos con talleres y asesoramiento para que aprendas a cuidar tus cultivos.",
@@ -194,36 +194,36 @@
       {
         "heading": "¿Quiénes Somos?",
         "content": "En Como el Ajo, nos dedicamos a crear, mejorar y personalizar huertos urbanos con sistemas de riego tecnificado, eliminando las barreras y el temor inicial que muchos sienten al iniciar un huerto en casa. Nuestro propósito es ofrecer comodidad y confianza para que cada persona pueda disfrutar de los beneficios del autoconsumo y la agricultura en su propio hogar.",
-        "imageAlt": "Descripción de la imagen",
-        "imageSrc": "placeholder.svg",
+        "imageAlt": "Ajolin Como el Ajo",
+        "imageSrc": "assets/img/dibujos/ajolin.jpeg",
         "order": "normal"
       },
       {
         "heading": "Nuestro Compromiso",
         "content": "Originalmente centrados en el cliente individual, ahora también llevamos la agricultura urbana al entorno laboral. Ayudamos a empresas a integrar huertos en sus oficinas para fomentar pausas activas y actividades de equipo, creando espacios verdes que promueven un ambiente más saludable y productivo. Además, expandimos nuestros servicios a hoteles, restaurantes y bares que buscan una experiencia gastronómica sostenible y de alta calidad para sus clientes.",
-        "imageAlt": "Descripción de la imagen",
-        "imageSrc": "placeholder.svg",
+        "imageAlt": "B2B Como el Ajo",
+        "imageSrc": "assets/img/dibujos/b2b_2.jpeg",
         "order": "reverse"
       },
       {
         "heading": "Nuestra Visión",
         "content": "Ser líderes en el diseño y creación de huertos urbanos tanto para personas como para empresas, promoviendo un estilo de vida sostenible y saludable a través de soluciones personalizadas.",
-        "imageAlt": "Descripción de la imagen",
-        "imageSrc": "placeholder.svg",
+        "imageAlt": "Maceta de Como el Ajo",
+        "imageSrc": "assets/img/fotos/example_2.jpg",
         "order": "normal"
       },
       {
         "heading": "Nuestra Misión",
         "content": "Derribar las barreras que impiden a personas y empresas crear y mantener huertos urbanos, incentivando el consumo de alimentos frescos y saludables, y creando experiencias únicas y productivas.",
-        "imageAlt": "Descripción de la imagen",
-        "imageSrc": "placeholder.svg",
+        "imageAlt": "Charla de Como el Ajo",
+        "imageSrc": "assets/img/fotos/example_3.jpg",
         "order": "reverse"
       },
       {
         "heading": "Nuestra Historia",
         "content": "Nacimos con el propósito de facilitar el acceso a la agricultura urbana, ofreciendo soluciones innovadoras y seguras para quienes desean cultivar en casa o en el trabajo. Con los años, hemos expandido nuestro alcance para incluir proyectos empresariales, siempre enfocados en sostenibilidad y calidad.",
-        "imageAlt": "Descripción de la imagen",
-        "imageSrc": "placeholder.svg",
+        "imageAlt": "Dibujo de Ajolin",
+        "imageSrc": "assets/img/dibujos/wallpaper_1.jpeg",
         "order": "normal"
       }
     ]
